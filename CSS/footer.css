@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+.footer-container h4 {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+p {
+    font-size: 1rem;
+    line-height: 30px;
+    margin-bottom: 50px!important;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(122, 122, 122);
+}
+label {
+    color:#535353;
+    margin-bottom: 0.3rem;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    line-height: 30px;
+    cursor: text;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s ease;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+.footer-container {
+    margin-top: 120px;
+    background-color: rgb(15, 15, 15);
+}
+ul.social-media {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.social-media li {
+    margin: 0.3rem;
+    padding: 3rem;
+    background-color: rgb(25, 25, 25);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.social-media li a {
+    color: #969696;
+}
+ul.social-media li:hover {
+    background-color: #967753;
+    cursor: pointer;
+}
+ul.social-media li:hover a {
+    color: white;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+.input-container input, .input-container textarea {
+    background-color: rgb(15, 15, 15);
+    border: none;
+    border-bottom: 1px solid #333;
+    z-index: 2;
+}
+.input-container input:focus, .input-container textarea:focus {
+    background-color: rgb(15, 15, 15);
+    border: none;
+    border-bottom: 2px solid rgb(85, 85, 85);
+    color: rgb(122, 122, 122)
+}
+
+/* The 2 blocks of code below make the label move up a little bit when input is focused . I have done this with JavaScript so they are no longer in need*/
+/* .input-container input:focus + label {
+    top: -15px;
+    font-size: 0.9rem;
+}
+.input-container textarea:focus + label {
+    top: -15px;
+    font-size: 0.9rem;
+} */
+label.toggle {
+    top: -15px;
+    font-size: 0.9rem;
+}
+.send-message {
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    background-color: #967753;
+    color: white;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+.send-message:hover {
+    background-color: #785f42;
+}

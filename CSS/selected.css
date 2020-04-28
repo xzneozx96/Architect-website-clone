@@ -1,0 +1,69 @@
+section.selected-projects {
+    padding: 6rem 0;
+    background-color: #0f0f0f;
+}
+section.selected-projects h2 {
+    color: white;
+    font-size: 30px;
+    font-family: "Poppins";
+    line-height: 40px;
+}
+section.strengths {
+    padding: 6rem 0;
+    background-color: rgb(248, 248, 248);
+}
+.strength {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    color: rgb(154, 129, 100);
+    font-size: 4rem;
+}
+.strength h3 {
+    font-size: 0.8rem;
+    font-family: "Poppins";
+    line-height: 30px;
+    margin: 0;
+    color: black;
+}
+.feature-container {
+    width: 100%;
+    height: 724px;
+    background-color: rgba(15, 15, 15, 0.8);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.feature-container .overlay-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: rgba(15, 15, 15, 0.8);
+    transition: opacity 0.15s ease-out;
+}
+.feature-container h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    line-height: 38px;
+    margin: 0;
+    position: relative;
+    padding: 3rem;
+}
+.feature-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.feature-container:hover .overlay-text {
+    opacity: 0;
+}
+
+.feature-container:hover  {
+    width: 105%;
+}

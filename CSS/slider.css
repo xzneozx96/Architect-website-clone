@@ -1,0 +1,232 @@
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+body {
+    background: #eee;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/* Make the images spread to full width and height of the screen. Without this block of code, the images will only fit the width */
+.carousel {
+    height: 100%;
+    width: 100%;
+}
+.carousel .carousel-inner {
+    height:100%;   
+    width: 100%; 
+}
+.carousel .carousel-inner .carousel-item {
+    height:100%;   
+    width: 100%; 
+}
+/* Styling the carousel and overlay text with "fade in up" animation */
+.carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+.slider-content .swiper-button-next {
+    right: 2%;
+}
+.slider-content .swiper-button-prev {
+    left: 2%;
+}
+.slider-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 33, 0.6);
+    color: white;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    z-index: 10;
+}
+
+/* Style the nav bar and make it responsive */
+.nav-bar {
+    position: fixed;
+    padding: 0 15px;
+    list-style-type: none;
+    width: 68%;
+    left: 16%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-bar li {
+    margin: 0;
+    line-height: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-bar li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 6px 12px;
+    color: white;
+}
+.nav-bar #logo {
+    margin-right: auto;
+}
+.nav-bar .toggle {
+    display: none; 
+}
+.nav-bar .toggle a i {
+    font-size: 2rem;
+}
+@media screen and (max-width:800px) {
+    .nav-bar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bar #logo {
+        display: none;
+    }
+    .nav-bar .toggle {
+        order: 1;
+        display: block;
+        right: 0;
+    }
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        order: 2;
+        display: none;
+    }
+    .nav-bar .nav-item.active {
+        display: block;
+    }
+    .slider-content {
+        font-size: 2rem;
+    }
+    .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .hidden-box {
+        display: none;
+    }
+    .col-md-3 img {
+        margin-left: 260px;
+    }
+}
+
+/* Styling About Us section */
+.container {
+    padding: 140px 0;
+}
+
+.col-md-5 {
+    align-self: center;
+}
+
+.about-us {
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+}
+.para-aboutUs {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 36px;
+}
+.weird-img img {
+    margin-left: -260px;
+}
+.hidden-box {
+    margin-top: 240px;
+    min-height: 380px;
+    background-color: #9a8164;
+    width: 115%;
+    min-height: 380px;
+}
+
+/* Styling the project section */
+.project-container {
+    padding: 0 0 140px 0;
+}
+.project-bg-img {
+    background-image: url("/Images/architecture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: -240px;
+    height: 800px;
+}
+.project-content {
+    align-self: center;
+}
+
+.current-project {
+    font-family: 'Poppins';
+    line-height: 22px;
+    font-size: 11px;
+    color: #b5b5b5;
+    letter-spacing: 1px;
+}
+.rodney {
+    font-family: 'Poppins';
+    line-height: 78px;
+    font-size: 68px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.view-project {
+    font-family: 'Poppins';
+    line-height: 22px;
+    font-size: 11px;
+    color: #9a8164;
+    letter-spacing: 1px;
+}
+.project-content-weird {
+    position: relative;
+    margin: 165px 0 0 -140px;
+    background-color: white;
+    padding: 120px 200px;
+}
+
+/* Style the Year of Experience section */
+.acknowledgement-container {
+    padding: 0 0 140px 0 ;
+}
+.partners {
+    padding: 0 90px;
+}
+.year-of-experience {
+    font-family: 'Poppins';
+    font-size: 28px;
+    text-transform: uppercase;
+    color: rgb(204, 204, 204)
+}
+.number {
+    margin-bottom: 30px;
+    font-size: 220px;
+    font-family: 'Poppins';
+    font-weight: 700px;
+    line-height: 200px;
+}
+.partner-client {
+    font-size: 13px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: rgb(84, 84, 84);
+}
+.col-md-4 img {
+    margin-bottom: 30px;
+    display: block;
+}
