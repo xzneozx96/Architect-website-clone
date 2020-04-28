@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/CSS/slider.css">    
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="/CSS/swiper.css">
+
+  <!-- Link to Photo Gallery CSS and Light box CSS-->
+  <link rel="stylesheet" href="/CSS/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+  <!-- Link to Selected Projects CSS -->
+    <link rel="stylesheet" href="/CSS/selected.css">
+
+  <!-- Link to Footer CSS -->
+  <link rel="stylesheet" href="/CSS/footer.css">
+
+  <!-- Link to google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Link Animation CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  <!-- Link to font awesome -->
+  <script src="https://kit.fontawesome.com/bee75fca36.js" crossorigin="anonymous"></script>
+
+  <!-- Link to Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+   <!-- Bootstrap JS and jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="nav-bar">
+            <li id="logo"><h1><a href="#home"><img src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/logo_white.png" width="48px" height="45px"></a></h1></li>
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#project">Projects</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="toggle"><a href="#icon"><i class="fas fa-bars"></i></a></li>
+        </ul>   
+        <!-- The slideshow -->
+        <div class="carousel-inner" id="home">
+
+          <div class="carousel-item  active">
+            <div class="slider-content ">
+                <span class="architecture animated fadeInUp delay-1s">Architecture</span>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <img src="/Images/architecture.jpg" class="mx-auto d-block" alt="Los Angeles" width="100%" height="100%">
+          </div>
+
+          <div class="carousel-item min-vh-100">
+            <div class="slider-content">
+                <span class="home-design animated fadeInUp delay-1s">Home Design</span>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <img src="/Images/home.jpg" alt="Chicago" width="100%" height="100%">
+          </div>
+
+          <div class="carousel-item min-vh-100">
+            <div class="slider-content">
+                <span class="interior-design animated fadeInUp delay-1s">Interior Design</span>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <img src="/Images/interior.jpg" alt="New York" width="100%" height="100%">
+          </div>
+        </div>
+        
+    </div>
+    
+    <!-- About us -->
+    <div class="container about-container" id="about">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="about-us">About Us</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="para-aboutUs">Objectively communicate web-enabled data without standardized functionalities. Professionally initiate cross functional experiences for goal-oriented potentialities. Synergistically plagiarize transparent vortals after world-class supply chains. Progressively incubate high-payoff deliverables before proactive technology.</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 60px;">
+                    <div class="col-md-4">
+                        <h6 class="about-us">Architecture</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="about-us">Interior Design</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="about-us">Home Design</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="hidden-box"></div>
+            </div>
+            <div class="col-md-3 weird-img">
+                    <img src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/about.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodney Livingroom -->
+    <div class="container-fluid project-container">
+        <div class="row project-row">
+            <div class="col-md-6 project-bg-img"></div>
+            <div class="col-md-6 project-content">
+                <div class="project-content-weird">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="current-project">CURRENT PROJECT</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="rodney">Rodney <br> Livingroom</h2>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 40px;">
+                        <div class="col-md-4">
+                            <h6 class="view-project">VIEW PROJECT</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 14 Year of experience -->
+    <div class="container acknowledgement-container">
+        <div class="row justify-content-between">
+            <div class="col-md-4 experience">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center" style="height: 220px;">
+                        <p class="number" style="color: black;"></p>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <span class="year-of-experience" style="text-transform: lowercase;">year of experience</span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div class="row partners">
+                    <div class="col-md-12">
+                        <h4 class="partner-client" style="color: black;">partners & clients</h4>
+                    </div>
+                
+                    <div class="col-md-4 col-sm-4">
+                        <img class="img-fluid" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/client_05.svg" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <img class="img-fluid" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/client_04.svg" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <img class="img-fluid" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/client_02.svg" alt="">
+                    </div>
+                
+                    <div class="col-md-4 col-sm-4">
+                        <img class="img-fluid" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/client_04.svg" alt="">
+                    </div> 
+                    <div class="col-md-4 col-sm-4">
+                        <img class="img-fluid" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/client_03.svg" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <img class="img-fluid" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/client_05.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="selected-projects">
+        <h2 class="text-center">Selected Projects</h2>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 d-flex p-0"> 
+                    <div class="feature-container">
+                        <img src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview01.jpg" class="img-fluid">
+                        <div class="overlay-text">
+                            <h3>South Valley Apartment</h3>
+                        </div>
+                    </div>
+                    <div class="feature-container">
+                        <img src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview02.jpg" class="img-fluid">
+                        <div class="overlay-text">
+                            <h3>Silvermore Apartment</h3>
+                        </div>
+                    </div>
+                    <div class="feature-container">
+                        <img src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview04.jpg" class="img-fluid">
+                        <div class="overlay-text">
+                            <h3>Westside Villa</h3>
+                        </div>
+                    </div>
+                    <div class="feature-container">
+                        <img src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview10.jpg" class="img-fluid">
+                        <div class="overlay-text">
+                            <h3>Rodney Livingroom</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="strengths">
+        <div class="container p-0">
+            <div class="row  d-flex justify-content-between">
+            <div class="col-md-1-5 strength">
+                    <span class="icon"><i class="fas fa-history"></i></span>
+                    <h3>Contact 24/7</h3>
+            </div>
+            <div class="col-md-1-5 strength">
+                <span class="icon"><i class="fas fa-headset"></i></i></span>
+                <h3>Worldclass Support</h3>
+            </div>
+            <div class="col-md-1-5 strength">
+                <span class="icon"><i class="fas fa-history"></i></span>
+                <h3>Global Company</h3>
+            </div>
+            <div class="col-md-1-5 strength">
+                <span class="icon"><i class="far fa-lightbulb"></i></i></span>
+                <h3>Creative</h3>
+            </div>
+            <div class="col-md-1-5 strength">
+                <span class="icon"><i class="fas fa-book"></i></span>
+                <h3>Knowledge</h3>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <div class="container-fluid gallery-container p-5" id="project">
+        <h1 style="margin-top: 0;">Photo Gallery</h1>    
+        <div class="tz-gallery">
+    
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview10.jpg"> 
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview10.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div> 
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview06.jpg"> 
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview06.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div> 
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3 offset-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview04.jpg"> 
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview04.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div> 
+                    </a>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-6 col-md-3 offset-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview02.jpg"> 
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview02.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div> 
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview01.jpg"> 
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview01.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div> 
+                    </a>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview08.jpg">
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview08.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 offset-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview07.jpg">
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview07.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a class="lightbox" href="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview09.jpg">
+                        <div class="img-container">  
+                            <img class="img-fluid img-rounded" src="https://demo.kallyas.net/architect/wp-content/uploads/sites/28/2016/11/project-preview09.jpg" alt="Park">
+                        </div>
+                        <div class="search-icon-container">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer-container mt-0" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 contact-us" style="padding-right: 50px;">
+                    <div class="col-md-12">
+                        <h4>CONTACT US</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form">
+                            <div class="input-container">
+                                
+                                <input type="text" class="form-control form-control-one" id="name">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" class="form-control" id="email">
+                                <label for="email">Your Email</label>
+
+                            </div>
+                            <div class="input-container">
+                                <input type="text" class="form-control" id="phone">
+                                <label for="phone">Your Phone</label>
+
+                            </div>
+                            <div class="input-container">
+                                <textarea id="message" rows="5" class="form-control"></textarea>
+                                <label for="message">Message</label>
+
+                            </div>
+                            <br>
+                            <button class="send-message">Send message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 information">
+                    <div class="row">
+                            <div class="col-md-6">
+                                <h4>ADDRESS</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>CONTACTS</h4>
+                            </div>
+                            <div class="col-md-6 address">
+                                <p>Kallyas Architect<br>PO Box 54593<br>Wyatt Street 9321</p>
+                            </div>
+                            <div class="col-md-6 d-flex contacts">
+                                <p>office@kallyasarchitect.com<br>sales@kallyasarchitect.com<br>(2366) 945 652 344</p>
+                            </div>
+                        
+                        <div class="col-md-12">
+                            <h4>SOCIAL PROFILES</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="social-media">
+                                <li class="item"><a href="#twitter"><span><i class="fab fa-twitter"></i></span></a></li>
+                                <li class="item"><a href="#twitter"><span><i class="fab fa-google-plus-g"></i></span></a></li>
+                                <li class="item"><a href="#twitter"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                                <li class="item"><a href="#twitter"><span><i class="fab fa-linkedin-in"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/slider.js"></script>
+
+    <!-- Light box JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+</body>
+</html>
